@@ -54,7 +54,7 @@ for filename in glob.glob(os.path.join(path, '*.csv')):
                 print('=========================================')
                 if invalid_command is True:
                     print('Invalid command!')
-                print('You have %d complete processes.' % len(complete))
+                print('You have completed %d processes.' % len(complete))
                 print('Process number:', current_process.iloc[[index]]['process'].values[0])
                 print('Type \'d\' to confirm the label and go next, \'s\' to go next and reject the label, and \'a\' to go back.')
                 print('Hint : type \'e\' to expand text.')
