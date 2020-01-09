@@ -64,7 +64,10 @@ for filename in glob.glob(os.path.join(path, '*.csv')):
                     index += 1
                     invalid_command = False
                     expand = False
-                    index = 0 if index < 0 else index
+                    index2 = index
+                    while index2 < current_process.shape[0]:
+                        current_process.iloc[index2,label_index] = np.NAN
+                        index2 += 1
                     os.system('cls' if os.name == 'nt' else 'clear')
                     break
                 elif command == 's':
