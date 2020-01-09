@@ -4,7 +4,7 @@ from pygame import mixer
 import pandas as pd
 import numpy as np
 
-f = open('rotulator_2000 (2).txt', 'r')
+f = open('title_screen.txt', 'r')
 title_screen = f.read()
 f.close()
 mixer.init()
